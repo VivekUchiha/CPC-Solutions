@@ -68,7 +68,7 @@ When ai = 1, (ai+1) = 2 = 2^1
 ai = 3, (ai + 1) = 4 = 2^2  
 ai = 7, (ai + 7) = 8 = 2^3 and so on.  
   
-Which means if prime p is a factor of smallest such N (a1 = 1) . Then next we need to multiply (p\*p) ( a1 = 3 ) . Then p\*p\*p\*p ( a1 = 7).  
+Which means if prime p is the largest factor multiplied to N (ex a1 = 1), The next time we multiply (p\*p) (ai = 3). Then p\*p\*p\*p (ai = 7).  
   
 So we can store all primes less than 2\*10^6, using Sieve Algorithm in a priority_queue.  
 Iteratively select the smallest number in priority_queue say p and multiply it with N, and add corresponding next available power in priority_queue.
